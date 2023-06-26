@@ -1,0 +1,67 @@
+.homeHero{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.otherHeroes{
+    width: 100%;
+    height: 76vh;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.92;
+}
+
+.heroText{
+    position: absolute;
+    font-family: 'Epilogue', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heroText h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: var(--mainRed);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.heroText p{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: var(--blueColor);
+    font-weight: bold;
+    padding: 0.2rem 0 1.5rem 0;
+}
+
+.heroText .homeBtn{
+    text-decoration: none;
+    background: teal;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--whiteColor);
+}
+
+@media screen and (max-width: 550px){
+    .heroText h1{
+        padding: 10px 20px;
+        font-size: 1.6rem;
+    }
+
+    .heroText p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+}
